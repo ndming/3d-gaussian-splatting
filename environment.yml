@@ -1,20 +1,45 @@
-name: gaussian_splatting
+name: ndgs
 channels:
   - pytorch
+  - nvidia/label/cuda-11.8.0
   - conda-forge
   - defaults
 dependencies:
-  - cudatoolkit=11.6
+  - assimp
+  - boost=1.80
+  - cmake=3.24
+  - cuda-toolkit=11.8
+  - eigen
+  - embree=3.13
+  - ffmpeg=4.4
+  - gxx=10
+  - gcc=10
+  - glew
+  - glfw
+  - gtk3
+  - libopencv
+  - libxext-devel-conda-x86_64
+  - libxxf86vm-devel-conda-x86_64
+  - mkl=2024.0.0
+  - mesa-libgl-devel-conda-x86_64
+  - ninja
+  - numpy=1.23.5
+  - pkg-config
   - plyfile
-  - python=3.7.13
   - pip=22.3.1
-  - pytorch=1.12.1
-  - torchaudio=0.12.1
-  - torchvision=0.13.1
+  - python=3.9
+  - pytorch=2.0.0
+  - pytorch-cuda=11.8
+  - torchaudio=2.0.0
+  - torchvision=0.15.0
   - tqdm
+  - xorg-libxcomposite
+  - xorg-libxdamage
+  - xorg-xineramaproto
   - pip:
     - submodules/diff-gaussian-rasterization
     - submodules/simple-knn
     - submodules/fused-ssim
     - opencv-python
     - joblib
+    - tensorboard
