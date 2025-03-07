@@ -8,6 +8,7 @@ dependencies:
   - cuda-toolkit=11.8
   - gxx=10
   - gcc=10
+  - lightning
   - mkl=2024.0.0
   - numpy=1.23.5
   - plyfile
