@@ -113,8 +113,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
         if viewpoint_cam.alpha_mask is not None:
             alpha_mask = viewpoint_cam.alpha_mask.cuda()
-            # somehow this creates a significant amount of floaters when training with .png images
-            # image *= alpha_mask
+            image *= alpha_mask
 
         # Loss
         gt_image = viewpoint_cam.original_image.cuda()
